@@ -3,6 +3,12 @@
   font-family: Sanchez;
 }
 
+body {
+  position: relative;
+}
+ a {
+   color: #c6b38e;
+ }
 .App {
   text-align: center;
   display: flex;

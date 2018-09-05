@@ -11,7 +11,7 @@ export default class About extends Component {
       src="fullstack-headshot-3.png"
       alt=""
       />
-      <h2 className="Body-title">Who am I?</h2>
+      <h2 id="About-me" className="Body-title">Who am I?</h2>
       <p className="Body-text">
       I am a full stack software engineer. I have experience building responsive front-end interfaces using React, React Native, Redux, HTML, and CSS, as well as RESTful APIs and with Node, Express, PostgresQL, and Sequelize.
 

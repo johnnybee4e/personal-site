@@ -6,9 +6,9 @@ export default class Header extends Component {
     return (
       <div className="navbar">
         <header className="App-header">
-        <button className="Header-button">Who am I?</button>
-        <button className="Header-button"> <a href="#projects">Things I've Built</a></button>
-        <button className="Header-button">Places I've Been</button>
+        <button className="Header-button"><a href="#About-me">Who am I?</a></button>
+        <button className="Header-button"><a href="#Projects">Things I've Built</a></button>
+        <button className="Header-button"><a href="#Experience">Places I've Been</a></button>
         </header>
       </div>
     );
