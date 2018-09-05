@@ -9,6 +9,11 @@ body {
  a {
    color: #c6b38e;
  }
+
+ a:hover {
+  color: white;
+}
+
 .App {
   text-align: center;
   display: flex;
