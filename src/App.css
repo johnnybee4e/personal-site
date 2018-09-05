@@ -104,6 +104,7 @@
   width: 60%;
 }
 
+
 .Project-video {
   width: 100%;
 }
@@ -115,7 +116,7 @@
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
-    width: calc(50% - 24px);
+    width: calc(60% - 24px);
   }
 
   .Project-video {
@@ -137,16 +138,17 @@
     /* padding: 0 12px;
     width: calc(50% - 24px); */
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio */
-    padding-top: 25px;
+    padding-bottom: 20%; /* 16:9 ratio */
+    padding-top: 8px;
     height: 0;
+    margin-left: 1rem;
   }
 
-  .Project-video {
+  .Project-video-container .Project-video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     /* width: 400px; */
     /* height: 200px; */
