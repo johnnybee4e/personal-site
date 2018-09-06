@@ -3,6 +3,21 @@
   font-family: Sanchez;
 }
 
+body {
+  position: relative;
+}
+ a {
+   color: #c6b38e;
+ }
+
+ a:hover {
+  color: white;
+}
+
+.navbar {
+  position: relative;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -18,6 +33,7 @@
   background-color: #191d32;
   height: 3em;
   width: 100%;
+  list-style: none;
 }
 
 
@@ -36,6 +52,7 @@
   background-color: #191d32;
   border: 1px solid #191d32;
   flex-flow: row;
+  justify-content: space-between;
   height: 4em;
   width: 8em;
 }
