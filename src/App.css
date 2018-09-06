@@ -9,10 +9,10 @@ body {
  a {
    color: #c6b38e;
  }
-
+/* 
  a:hover {
   color: white;
-}
+} */
 
 .navbar {
   position: relative;
@@ -33,7 +33,6 @@ body {
   background-color: #191d32;
   height: 3em;
   width: 100%;
-  list-style: none;
 }
 
 
@@ -52,7 +51,6 @@ body {
   background-color: #191d32;
   border: 1px solid #191d32;
   flex-flow: row;
-  justify-content: space-between;
   height: 4em;
   width: 8em;
 }
@@ -69,6 +67,12 @@ body {
   /* background-color: #c4af9a; */
   /* align-content: flex-start; */
   /* border: solid 3px red; */
+}
+#Exp {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Info-card {
@@ -130,6 +134,16 @@ body {
   margin: .2em;
 }
 
+.Exp-desc-list {
+  list-style: square;
+}
+
+.Exp-desc-item {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
@@ -142,6 +156,15 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  #Personal-info {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Info-card {
+    width: 70%;
+  }
+
   .Project-container {
     flex-flow: row;
   }
