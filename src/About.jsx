@@ -23,6 +23,9 @@ export default class About extends Component {
             S3), Unity, Expo, Socket.io, jQuery, C#, and Ruby. I'm always
             experimenting with new frameworks and languages!
           </p>
+          <p className='Body-text'>When I'm not coding, you can find me rehearsing and recording music
+          at my studio out in the Rockaways. I play drums in a couple of active bands,
+          and formerly sang and played guitar and bass for several others.</p>
         </div>
       </div>
     );

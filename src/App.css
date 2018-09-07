@@ -33,6 +33,7 @@ body {
   background-color: #191d32;
   height: 3em;
   width: 100%;
+  z-index: 2;
 }
 
 
@@ -63,6 +64,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  padding-bottom: 6rem;
   /* background-color: #D9CCBE; */
   /* background-color: #c4af9a; */
   /* align-content: flex-start; */
@@ -86,7 +88,7 @@ body {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 1.5% 2%;
+  margin: 10% 2%;
 }
 
 .Body-container {
@@ -143,7 +145,13 @@ body {
   padding-bottom: 10px;
 }
 
+#faLogo {
+  width: 40%;
+}
 
+#mixyLogo {
+  width: 25%;
+}
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
@@ -194,4 +202,17 @@ body {
     /* height: 200px; */
   }
 
+  #Headshot {
+    width: 500px;
+    margin-bottom: 5%;
+  }
+
+  #Personal-info .Body-text {
+    padding: 0 5%;
+    font-size: x-large;
+  }
+
+  .Info-card .Body-title {
+    padding-bottom: 2rem;
+  }
 }

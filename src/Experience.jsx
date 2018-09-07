@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import faLogo from './fa-logo.png';
+import mixyLogo from './mixyLogo.png';
 
 export default class Experience extends Component {
   render() {
@@ -8,10 +10,8 @@ export default class Experience extends Component {
           <h2 id="Experience" className="Body-Title">
             Experience
           </h2>
-          <h3 className="Company-name">
-            Fullstack Academy
-            <br /> Teaching Fellow
-          </h3>
+          <img id="faLogo" src={faLogo} alt="Logo for Fullstack Academy of Code" />
+          <h3 className="Company-name">Teaching Fellow</h3>
           <p>July 2018 - October 2018</p>
           <ul className="Exp-desc-list">
             <li className="Exp-desc-item">
@@ -28,10 +28,8 @@ export default class Experience extends Component {
               standups and holding code reviews
             </li>
           </ul>
-          <h3 className="Company-name">
-            MixyPaws
-            <br />
-            Training Manager
+          <img id="mixyLogo" src={mixyLogo} alt="Logo for MixyPaws Dog Walking Company" />
+          <h3 className="Company-name">Training Manager
           </h3>
           <ul className="Exp-desc-list" />
         </div>
