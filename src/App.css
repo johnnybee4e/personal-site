@@ -36,7 +36,6 @@ body {
   z-index: 2;
 }
 
-
 .Header-text {
   font-size: large;
   color: white;
@@ -70,6 +69,11 @@ body {
   /* align-content: flex-start; */
   /* border: solid 3px red; */
 }
+
+#About-me {
+  margin-top: 10%;
+}
+
 #Exp {
   display: flex;
   flex-flow: column;
@@ -88,7 +92,7 @@ body {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 10% 2%;
+  margin: 0 2%;
 }
 
 .Body-container {
@@ -121,6 +125,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .Project-video-container {
@@ -134,6 +139,22 @@ body {
 
 .Project-container .Body-text {
   margin: .2em;
+}
+
+.Project-links-container {
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  margin-bottom: 2rem;
+}
+
+.Project-links {
+  font-size: larger;
+  border: 1px solid #c6b38e;
+  padding: .5rem;
+  box-shadow: 0 0 2px;
 }
 
 .Exp-desc-list {
@@ -150,7 +171,7 @@ body {
 }
 
 #mixyLogo {
-  width: 25%;
+  width: 40%;
 }
 @media only screen and (min-width: 600px) {
   .Project-video-container {
@@ -160,6 +181,11 @@ body {
 
   .Project-video {
     width: 100%;
+  }
+  
+  .Project-links-container {
+    /* width: 100%; */
+    /* justify-content: space-between; */
   }
 }
 
@@ -174,12 +200,13 @@ body {
   }
 
   .Project-container {
-    flex-flow: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .Project-container .Body-text {
     width: 50%;
-    text-align: left;
+    margin: 3% 0 5% 0;
   }
 
   .Project-video-container {
@@ -189,7 +216,7 @@ body {
     padding-bottom: 20%; /* 16:9 ratio */
     padding-top: 8px;
     height: 0;
-    margin-left: 1rem;
+    margin-left: 8rem;
   }
 
   .Project-video-container .Project-video {

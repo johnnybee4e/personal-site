@@ -24,6 +24,24 @@ export default class Projects extends Component {
             easily create interactive coding lessons. Built with React, Redux,
             Docker, Amazon S3, Express, Sequelize, and deployed on Heroku.
           </p>
+          <div className="Project-links-container">
+            <a
+              className="Project-links"
+              href="https://www.github.com/Replicode/Replicode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+            <a
+              className="Project-links"
+              href="https://replicode.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Link
+            </a>
+          </div>
         </div>
         <h3 className="Project-name">WalkerPal</h3>
         <div className="Project-container">
@@ -42,6 +60,14 @@ export default class Projects extends Component {
             business owners to keep track of their employees. Built using React
             Native, Expo, and Google Maps API.
           </p>
+          <a
+              className="Project-links"
+              href="https://github.com/johnnybee4e/walker-pal"
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
         </div>
       </div>
     );
