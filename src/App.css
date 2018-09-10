@@ -9,10 +9,10 @@ body {
  a {
    color: #c6b38e;
  }
-
+/* 
  a:hover {
   color: white;
-}
+} */
 
 .navbar {
   position: relative;
@@ -33,9 +33,8 @@ body {
   background-color: #191d32;
   height: 3em;
   width: 100%;
-  list-style: none;
+  z-index: 2;
 }
-
 
 .Header-text {
   font-size: large;
@@ -52,7 +51,6 @@ body {
   background-color: #191d32;
   border: 1px solid #191d32;
   flex-flow: row;
-  justify-content: space-between;
   height: 4em;
   width: 8em;
 }
@@ -65,10 +63,22 @@ body {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  padding-bottom: 6rem;
   /* background-color: #D9CCBE; */
   /* background-color: #c4af9a; */
   /* align-content: flex-start; */
   /* border: solid 3px red; */
+}
+
+#About-me {
+  margin-top: 10%;
+}
+
+#Exp {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Info-card {
@@ -82,7 +92,23 @@ body {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 1.5% 2%;
+  margin: 0 2%;
+}
+
+.Contact-info-container {
+  background-color: #191d32;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Contact-logo {
+  width: 4rem;
+}
+
+.Github-logo {
+  background-color: white;
 }
 
 .Body-container {
@@ -115,6 +141,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .Project-video-container {
@@ -130,6 +157,39 @@ body {
   margin: .2em;
 }
 
+.Project-links-container {
+  width: 75%;
+  display: flex;
+  flex-flow: row;
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.Project-links {
+  width: 8rem;
+  font-size: larger;
+  border: 1px solid #c6b38e;
+  padding: .5rem;
+  box-shadow: 0 0 2px;
+}
+
+.Exp-desc-list {
+  list-style: square;
+}
+
+.Exp-desc-item {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+#faLogo {
+  width: 40%;
+}
+
+#mixyLogo {
+  width: 40%;
+}
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
@@ -139,16 +199,30 @@ body {
   .Project-video {
     width: 100%;
   }
+  
+  .Project-links-container {
+    width: 60; 
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  #Personal-info {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Info-card {
+    width: 70%;
+  }
+
   .Project-container {
-    flex-flow: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .Project-container .Body-text {
     width: 50%;
-    text-align: left;
+    margin: 3% 0 5% 0;
   }
 
   .Project-video-container {
@@ -158,7 +232,7 @@ body {
     padding-bottom: 20%; /* 16:9 ratio */
     padding-top: 8px;
     height: 0;
-    margin-left: 1rem;
+    margin-left: 8rem;
   }
 
   .Project-video-container .Project-video {
@@ -171,4 +245,25 @@ body {
     /* height: 200px; */
   }
 
+  #Headshot {
+    width: 500px;
+    margin-bottom: 5%;
+  }
+
+  #Personal-info .Body-text {
+    padding: 0 5%;
+    font-size: x-large;
+  }
+
+  .Info-card .Body-title {
+    padding-bottom: 2rem;
+  }
+
+  .Project-links-container {
+    width: 40%; 
+  }
+
+  .Exp-desc-item {
+    font-size: x-large;
+  }
 }

@@ -3,6 +3,7 @@ import Header from './Header';
 import Projects from './Projects';
 import About from './About';
 import Experience from './Experience';
+import Footer from './Footer';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <About />
         <Projects />
         <Experience />
+        <Footer />
       </div>
     );
   }
