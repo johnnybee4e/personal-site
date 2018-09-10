@@ -60,14 +60,16 @@ export default class Projects extends Component {
             business owners to keep track of their employees. Built using React
             Native, Expo, and Google Maps API.
           </p>
-          <a
+          <div className="Project-links-container">
+            <a
               className="Project-links"
               href="https://github.com/johnnybee4e/walker-pal"
-              target='_blank'
+              target="_blank"
               rel="noopener noreferrer"
             >
               Github
             </a>
+          </div>
         </div>
       </div>
     );

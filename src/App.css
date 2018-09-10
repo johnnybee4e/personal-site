@@ -95,6 +95,22 @@ body {
   margin: 0 2%;
 }
 
+.Contact-info-container {
+  background-color: #191d32;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Contact-logo {
+  width: 4rem;
+}
+
+.Github-logo {
+  background-color: white;
+}
+
 .Body-container {
   margin: .7em .2em;
   display: flex;
@@ -142,15 +158,16 @@ body {
 }
 
 .Project-links-container {
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
-  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
   margin-bottom: 2rem;
 }
 
 .Project-links {
+  width: 8rem;
   font-size: larger;
   border: 1px solid #c6b38e;
   padding: .5rem;
@@ -184,8 +201,7 @@ body {
   }
   
   .Project-links-container {
-    /* width: 100%; */
-    /* justify-content: space-between; */
+    width: 60; 
   }
 }
 
@@ -241,5 +257,13 @@ body {
 
   .Info-card .Body-title {
     padding-bottom: 2rem;
+  }
+
+  .Project-links-container {
+    width: 40%; 
+  }
+
+  .Exp-desc-item {
+    font-size: x-large;
   }
 }
