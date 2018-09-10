@@ -7,7 +7,7 @@ import githubWhiteLogo from './github-logo.svg';
 export default class Footer extends Component {
   render() {
     return (
-      <div className="Contact-info-container">
+      <div id="Contact" className="Contact-info-container">
         <div className="Contact-information Github-logo">
           <a
             href="https://www.github.com/johnnybee4e"

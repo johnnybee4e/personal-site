@@ -27,17 +27,25 @@ export default class Header extends Component {
           >
             <button className="Header-button">
               <AnchorLink href="#About-me" offset={offset}>
-                Who am I?
+                Who
               </AnchorLink>
             </button>
+            <p>|</p>
             <button className="Header-button">
               <AnchorLink href="#Projects" offset={offset}>
-                Things I've Built
+                What
               </AnchorLink>
             </button>
+            <p>|</p>
             <button className="Header-button">
               <AnchorLink href="#Experience" offset={offset}>
-                Places I've Been
+                Where
+              </AnchorLink>
+            </button>
+            <p>|</p>
+            <button className="Header-button">
+              <AnchorLink href="#Contact" offset={offset}>
+                Contact
               </AnchorLink>
             </button>
           </Scrollspy>

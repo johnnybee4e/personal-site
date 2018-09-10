@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
-  font-family: Sanchez;
+  font-family: Sanchez, serif;
 }
 
 body {
   position: relative;
 }
- a {
-   color: #c6b38e;
- }
+
+a {
+  color: #c6b38e;
+}
 /* 
  a:hover {
   color: white;
@@ -22,10 +23,11 @@ body {
   text-align: center;
   display: flex;
   flex-flow: column;
-  background-color: #EEE9E3;
+  background-color: #eee9e3;
 }
 
 .App-header {
+  font-family: Montserrat, sans-serif;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -36,14 +38,14 @@ body {
   z-index: 2;
 }
 
+.App-header p {
+  color: #c6b38e;
+}
+
 .Header-text {
   font-size: large;
   color: white;
-  padding: .6em 1.6em;
-}
-
-.Header-button:active {
-
+  padding: 0.6em 1.6em;
 }
 
 .Header-button {
@@ -55,11 +57,25 @@ body {
   width: 8em;
 }
 
+.Header-button a {
+  font-family: Montserrat;
+  text-decoration: none;
+}
+
+.Header-button a:hover {
+  font-family: Montserrat;
+  text-decoration: underline;
+}
+
+.In-view {
+  background-color: #c6b38e;
+}
+
 #Personal-info {
   margin-top: 4.25em;
-  margin-left: .7em;
-  margin-right: .7em;
-  margin-bottom: .7em;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  margin-bottom: 0.7em;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -112,14 +128,14 @@ body {
 }
 
 .Body-container {
-  margin: .7em .2em;
+  margin: 0.7em 0.2em;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(109, 78, 85, .7);
-  background-color: rgba(25,29,50,.85);
-  color: #EEE9E3;
+  background-color: rgba(109, 78, 85, 0.7);
+  background-color: rgba(25, 29, 50, 0.85);
+  color: #eee9e3;
   box-shadow: 0 0 10px;
 }
 
@@ -148,13 +164,12 @@ body {
   width: 60%;
 }
 
-
 .Project-video {
   width: 100%;
 }
 
 .Project-container .Body-text {
-  margin: .2em;
+  margin: 0.2em;
 }
 
 .Project-links-container {
@@ -170,7 +185,7 @@ body {
   width: 8rem;
   font-size: larger;
   border: 1px solid #c6b38e;
-  padding: .5rem;
+  padding: 0.5rem;
   box-shadow: 0 0 2px;
 }
 
@@ -199,13 +214,19 @@ body {
   .Project-video {
     width: 100%;
   }
-  
+
   .Project-links-container {
-    width: 60; 
+    width: 60;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .App-header {
+    justify-content: space-evenly;
+  }
+  .Header-button a {
+    font-size: large;
+  }
   #Personal-info {
     align-items: center;
     justify-content: center;
@@ -260,7 +281,7 @@ body {
   }
 
   .Project-links-container {
-    width: 40%; 
+    width: 40%;
   }
 
   .Exp-desc-item {

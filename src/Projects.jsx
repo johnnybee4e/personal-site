@@ -5,7 +5,7 @@ export default class Projects extends Component {
     return (
       <div className="Body-container">
         <h2 id="Projects" className="Body-title">
-          Things I've Built
+          What I've Built
         </h2>
         <h3 className="Project-name">Replicode</h3>
         <div className="Project-container">
