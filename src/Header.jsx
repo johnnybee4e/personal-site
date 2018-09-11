@@ -4,7 +4,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default class Header extends Component {
   render() {
-    const offset = document.documentElement.clientHeight * 0.1;
+    const offset =
+      window.innerWidth < 786
+        ? document.documentElement.clientHeight * 0.1085
+        : document.documentElement.clientHeight * 0.075;
 
     window.addEventListener('scroll', function(evt) {
       if (this.window.scrollY > offset) {
@@ -21,7 +24,7 @@ export default class Header extends Component {
           <Scrollspy
             className="App-header"
             componentTag={'nav'}
-            currentClassName={'inView'}
+            currentClassName={'In-view'}
             offset={-offset}
             items={['About-me', 'Projects', 'Experience']}
           >

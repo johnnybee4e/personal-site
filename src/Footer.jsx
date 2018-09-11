@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import linkedInLogo from './linkedIn-logo.png';
 import gmailLogo from './gmail-logo.png';
-// import githubLogo from './github-logo.png';
-import githubWhiteLogo from './github-logo.svg';
+import githubLogo from './Octocat.png';
 
 export default class Footer extends Component {
   render() {
@@ -14,7 +13,7 @@ export default class Footer extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="Contact-logo" src={githubWhiteLogo} alt="Github Logo" />
+            <img className="Contact-logo" src={githubLogo} alt="Github Logo" />
           </a>
         </div>
         <div className="Contact-information">

@@ -29,6 +29,7 @@ a {
 .App-header {
   font-family: Montserrat, sans-serif;
   position: fixed;
+  border-radius: 0 0 8px 8px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -67,9 +68,13 @@ a {
   text-decoration: underline;
 }
 
-.In-view {
+/* .In-view {
   background-color: #c6b38e;
 }
+
+.In-View a {
+  color: #191d32;
+} */
 
 #Personal-info {
   margin-top: 4.25em;
@@ -79,7 +84,7 @@ a {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   /* background-color: #D9CCBE; */
   /* background-color: #c4af9a; */
   /* align-content: flex-start; */
@@ -87,7 +92,7 @@ a {
 }
 
 #About-me {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 #Exp {
@@ -108,23 +113,7 @@ a {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 0 2%;
-}
-
-.Contact-info-container {
-  background-color: #191d32;
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.Contact-logo {
-  width: 4rem;
-}
-
-.Github-logo {
-  background-color: white;
+  margin: 5% 2%;
 }
 
 .Body-container {
@@ -205,6 +194,36 @@ a {
 #mixyLogo {
   width: 40%;
 }
+
+.Contact-info-container {
+  background-color: #191d32;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Contact-logo {
+  width: 4rem;
+}
+
+.Contact-info-container {
+  background-color: #191d32;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Contact-logo {
+  width: 4rem;
+}
+
+.Github-logo {
+  
+}
+
+
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
@@ -219,6 +238,8 @@ a {
     width: 60;
   }
 }
+
+
 
 @media only screen and (min-width: 768px) {
   .App-header {
@@ -268,12 +289,16 @@ a {
 
   #Headshot {
     width: 500px;
-    margin-bottom: 5%;
+    margin: 6%;
   }
 
   #Personal-info .Body-text {
     padding: 0 5%;
     font-size: x-large;
+  }
+
+  .Info-card {
+    padding-bottom: 10%;
   }
 
   .Info-card .Body-title {
@@ -285,6 +310,17 @@ a {
   }
 
   .Exp-desc-item {
+    font-size: x-large;
+  }
+  #About-me {
+    margin: 10% 0 5% 0;
+  }
+
+  #Personal-info .Body-text {
+    margin: 5% 0;
+  }
+
+  .Project-container .Body-text {
     font-size: x-large;
   }
 }
