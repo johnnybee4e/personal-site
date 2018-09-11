@@ -206,10 +206,11 @@ a {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .Contact-logo {
-  width: 6rem;
+  width: 2.75rem;
 }
 
 .Contact-text {
@@ -321,5 +322,20 @@ a {
 
   .Project-container .Body-text {
     font-size: x-large;
+  }
+  
+  .Contact-logo {
+    width: 6rem;
+  }
+  
+  .Contact-text {
+    color: #c6b38e;
+  }
+  
+  .Github-logo img {
+    height: auto;
+    padding-top: 8px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 8px;
   }
 }
