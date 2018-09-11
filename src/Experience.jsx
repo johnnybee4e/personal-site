@@ -20,7 +20,7 @@ export default class Experience extends Component {
           <ul className="Exp-desc-list">
             <li className="Exp-desc-item">
               Assisted in teaching a cohort of 28 students. Covered concepts
-              such as: debugging, alogrithms, understanding technical concepts,
+              such as: debugging, algorithms, understanding technical concepts,
               and application architecture.
             </li>
             <li className="Exp-desc-item">
