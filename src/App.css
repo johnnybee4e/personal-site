@@ -113,7 +113,6 @@ a {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 5% 2%;
 }
 
 .Body-container {
@@ -195,34 +194,34 @@ a {
   width: 40%;
 }
 
-.Contact-info-container {
+#Contact-container {
   background-color: #191d32;
+}
+#Contact {
+  color: #c6b38e;
+}
+.Contact-info-container {
   display: flex;
   flex-flow: row;
   width: 100%;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .Contact-logo {
-  width: 4rem;
+  width: 6rem;
 }
 
-.Contact-info-container {
-  background-color: #191d32;
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  justify-content: space-evenly;
+.Contact-text {
+  color: #c6b38e;
 }
 
-.Contact-logo {
-  width: 4rem;
+.Github-logo img {
+  height: auto;
+  padding-top: 8px;
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 8px;
 }
-
-.Github-logo {
-  
-}
-
 
 @media only screen and (min-width: 600px) {
   .Project-video-container {
@@ -289,7 +288,7 @@ a {
 
   #Headshot {
     width: 500px;
-    margin: 6%;
+    margin: 5%;
   }
 
   #Personal-info .Body-text {
@@ -301,9 +300,9 @@ a {
     padding-bottom: 10%;
   }
 
-  .Info-card .Body-title {
-    padding-bottom: 2rem;
-  }
+  /* .Info-card .Body-title {
+    
+  } */
 
   .Project-links-container {
     width: 40%;

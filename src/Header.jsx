@@ -26,7 +26,7 @@ export default class Header extends Component {
             componentTag={'nav'}
             currentClassName={'In-view'}
             offset={-offset}
-            items={['About-me', 'Projects', 'Experience']}
+            items={['About-me', 'Projects', 'Experience', "Contact"]}
           >
             <button className="Header-button">
               <AnchorLink href="#About-me" offset={offset}>
