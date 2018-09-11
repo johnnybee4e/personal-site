@@ -8,7 +8,7 @@ export default class Experience extends Component {
       <div id="Exp">
         <div className="Info-card">
           <h2 id="Experience" className="Body-Title">
-            Experience
+            Where I've Been
           </h2>
           <img
             id="faLogo"

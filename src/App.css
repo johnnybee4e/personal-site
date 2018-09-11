@@ -1,14 +1,15 @@
 * {
   box-sizing: border-box;
-  font-family: Sanchez;
+  font-family: Sanchez, serif;
 }
 
 body {
   position: relative;
 }
- a {
-   color: #c6b38e;
- }
+
+a {
+  color: #c6b38e;
+}
 /* 
  a:hover {
   color: white;
@@ -22,11 +23,13 @@ body {
   text-align: center;
   display: flex;
   flex-flow: column;
-  background-color: #EEE9E3;
+  background-color: #eee9e3;
 }
 
 .App-header {
+  font-family: Montserrat, sans-serif;
   position: fixed;
+  border-radius: 0 0 8px 8px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,14 +39,14 @@ body {
   z-index: 2;
 }
 
+.App-header p {
+  color: #c6b38e;
+}
+
 .Header-text {
   font-size: large;
   color: white;
-  padding: .6em 1.6em;
-}
-
-.Header-button:active {
-
+  padding: 0.6em 1.6em;
 }
 
 .Header-button {
@@ -55,15 +58,33 @@ body {
   width: 8em;
 }
 
+.Header-button a {
+  font-family: Montserrat;
+  text-decoration: none;
+}
+
+.Header-button a:hover {
+  font-family: Montserrat;
+  text-decoration: underline;
+}
+
+/* .In-view {
+  background-color: #c6b38e;
+}
+
+.In-View a {
+  color: #191d32;
+} */
+
 #Personal-info {
   margin-top: 4.25em;
-  margin-left: .7em;
-  margin-right: .7em;
-  margin-bottom: .7em;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  margin-bottom: 0.7em;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   /* background-color: #D9CCBE; */
   /* background-color: #c4af9a; */
   /* align-content: flex-start; */
@@ -71,7 +92,7 @@ body {
 }
 
 #About-me {
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 #Exp {
@@ -92,34 +113,17 @@ body {
   border-radius: 50%;
   width: 300px;
   height: auto;
-  margin: 0 2%;
-}
-
-.Contact-info-container {
-  background-color: #191d32;
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.Contact-logo {
-  width: 4rem;
-}
-
-.Github-logo {
-  background-color: white;
 }
 
 .Body-container {
-  margin: .7em .2em;
+  margin: 0.7em 0.2em;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(109, 78, 85, .7);
-  background-color: rgba(25,29,50,.85);
-  color: #EEE9E3;
+  background-color: rgba(109, 78, 85, 0.7);
+  background-color: rgba(25, 29, 50, 0.85);
+  color: #eee9e3;
   box-shadow: 0 0 10px;
 }
 
@@ -148,13 +152,12 @@ body {
   width: 60%;
 }
 
-
 .Project-video {
   width: 100%;
 }
 
 .Project-container .Body-text {
-  margin: .2em;
+  margin: 0.2em;
 }
 
 .Project-links-container {
@@ -170,7 +173,7 @@ body {
   width: 8rem;
   font-size: larger;
   border: 1px solid #c6b38e;
-  padding: .5rem;
+  padding: 0.5rem;
   box-shadow: 0 0 2px;
 }
 
@@ -190,6 +193,37 @@ body {
 #mixyLogo {
   width: 40%;
 }
+
+#Contact-container {
+  background-color: #191d32;
+}
+#Contact {
+  color: #c6b38e;
+}
+.Contact-info-container {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.Contact-logo {
+  width: 2.75rem;
+}
+
+.Contact-text {
+  color: #c6b38e;
+}
+
+.Github-logo img {
+  height: auto;
+  padding-top: 8px;
+  background-color: rgba(255, 255, 255, .75);
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 600px) {
   .Project-video-container {
     padding: 12px;
@@ -199,13 +233,21 @@ body {
   .Project-video {
     width: 100%;
   }
-  
+
   .Project-links-container {
-    width: 60; 
+    width: 60;
   }
 }
 
+
+
 @media only screen and (min-width: 768px) {
+  .App-header {
+    justify-content: space-evenly;
+  }
+  .Header-button a {
+    font-size: large;
+  }
   #Personal-info {
     align-items: center;
     justify-content: center;
@@ -247,7 +289,7 @@ body {
 
   #Headshot {
     width: 500px;
-    margin-bottom: 5%;
+    margin: 5%;
   }
 
   #Personal-info .Body-text {
@@ -255,15 +297,45 @@ body {
     font-size: x-large;
   }
 
-  .Info-card .Body-title {
-    padding-bottom: 2rem;
+  .Info-card {
+    padding-bottom: 10%;
   }
 
+  /* .Info-card .Body-title {
+    
+  } */
+
   .Project-links-container {
-    width: 40%; 
+    width: 40%;
   }
 
   .Exp-desc-item {
     font-size: x-large;
+  }
+  #About-me {
+    margin: 10% 0 5% 0;
+  }
+
+  #Personal-info .Body-text {
+    margin: 5% 0;
+  }
+
+  .Project-container .Body-text {
+    font-size: x-large;
+  }
+  
+  .Contact-logo {
+    width: 6rem;
+  }
+  
+  .Contact-text {
+    color: #c6b38e;
+  }
+  
+  .Github-logo img {
+    height: auto;
+    padding-top: 8px;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 8px;
   }
 }

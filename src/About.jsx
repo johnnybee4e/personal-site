@@ -26,9 +26,9 @@ export default class About extends Component {
           </p>
           <p className="Body-text">
             When I'm not coding, you can find me rehearsing and recording music
-            at my studio out in the Rockaways. I play drums in a couple of
+            at my studio in Rockaway. I play drums for a couple of
             active bands, and formerly sang and played guitar and bass for
-            several others.
+            several others. 
           </p>
         </div>
       </div>
