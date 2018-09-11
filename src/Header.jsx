@@ -7,7 +7,7 @@ export default class Header extends Component {
     const offset =
       window.innerWidth < 786
         ? document.documentElement.clientHeight * 0.1085
-        : document.documentElement.clientHeight * 0.09;
+        : document.documentElement.clientHeight * 0.08;
 
     window.addEventListener('scroll', function(evt) {
       if (this.window.scrollY > offset) {
