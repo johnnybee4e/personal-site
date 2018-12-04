@@ -10,7 +10,7 @@ export default class About extends Component {
             <br />
             Jon Rosado
           </h1>
-          <img id="Headshot" src="fullstack-headshot-3.png" alt="" />
+          <img id="Headshot" src="fullstack-headshot-3.png" alt="Jon Rosado Headshot" />
 
           <h2 id="About-me" className="Body-title">
             Who am I?
